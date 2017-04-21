@@ -84,6 +84,7 @@ public class Demo {
         post.setHeader("Referer",URL);
 //        post.setHeader("Connection","keep-alive");
 //        post.setHeader("Host","www.javbus.co");
+
         httpClientUtil.setDefaultHeaders(post);
         CloseableHttpResponse re = sslHttpClient.execute(post);
         System.out.println(EntityUtils.toString(re.getEntity()));
